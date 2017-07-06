@@ -1,8 +1,15 @@
+import Head from 'next/head'
 import { mainFont, yellowColor, darkYellowColor, purpleColor, lightPurpleColor, darkColor, darkGrayColor, grayColor, lightGrayColor, mediumRadius, boxShadow, innerBoxShadow } from '../lib/variables'
 
 const App = ({ children }) => (
   <main className='app'>
+    <Head>
+      <title>veebi.chat &bull; Slacki grupp arendajatele ja disaineritele</title>
+      <meta charset='utf-8' />
+      <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+    </Head>
     { children }
+    {/* I know, this is pretty ridiculous 👇 */}
     <style global jsx>{`
 
         @import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700');
