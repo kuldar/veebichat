@@ -7,6 +7,13 @@ const App = ({ children }) => (
       <title>veebi.chat &bull; Slacki grupp arendajatele ja disaineritele</title>
       <meta charset='utf-8' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107594736-2"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-107594736-2');
+      </script>
     </Head>
     { children }
     {/* I know, this is pretty ridiculous 👇 */}
@@ -102,7 +109,7 @@ const App = ({ children }) => (
           display: block;
           width: 100%;
           font-size: 1.25rem;
-          line-height: 1;
+          line-height: 1.25rem;
           outline: none;
           padding: 1rem 1rem 1rem 3.5rem;
           background-repeat: no-repeat;
@@ -117,6 +124,8 @@ const App = ({ children }) => (
         ::placeholder {
           color: ${grayColor};
           font-family: ${mainFont};
+          font-size: 1.25rem;
+          line-height: 1.25rem;
           font-weight: 400;
         }
 
@@ -206,6 +215,7 @@ const App = ({ children }) => (
         }
 
         .main {
+          display: flex;
           height: auto;
           flex: 1;
           padding: 2.5rem;
@@ -228,6 +238,7 @@ const App = ({ children }) => (
         }
 
         .faq {
+          margin: auto 0;
           max-width: 40rem;
         }
 
@@ -295,7 +306,7 @@ const App = ({ children }) => (
         @media (min-width: 65rem) {
           .faqItem {
             margin-bottom: 3rem;
-          }          
+          }
         }
 
         .faqItem:last-child { margin-bottom: 0; }
@@ -340,7 +351,7 @@ const App = ({ children }) => (
         }
 
         .questions a {
-          color: ${darkGrayColor}; 
+          color: ${darkGrayColor};
         }
 
         .githubLink {
