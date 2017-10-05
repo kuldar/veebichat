@@ -9,10 +9,12 @@ const App = ({ children }) => (
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107594736-2"></script>
       <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-107594736-2');
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-107594736-2');
+        `}
       </script>
     </Head>
     { children }
