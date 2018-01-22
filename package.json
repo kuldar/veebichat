@@ -4,13 +4,14 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export"
   },
   "dependencies": {
     "graphql": "^0.9.3",
     "isomorphic-fetch": "^2.2.1",
     "js-cookie": "2.1.4",
-    "next": "latest",
+    "next": "3.2.2",
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
     "react-apollo": "^1.1.3",
