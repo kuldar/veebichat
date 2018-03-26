@@ -103,7 +103,7 @@ class index extends Component {
             </div>
             { t[this.state.locale].faq.map( (faq, i) => <FaqItem key={i} {...faq} />)}
             <div className='questions'>{t[this.state.locale].questions} <a href={`mailto:${t[this.state.locale].contactEmail}`}>{t[this.state.locale].contactEmail}</a></div>
-            <a href='http://github.com/kuldarkalvik/veebichat' className='githubLink'>{t[this.state.locale].githubLink}</a> 🔧
+            <a href='http://github.com/kuldar/veebichat' className='githubLink'>{t[this.state.locale].githubLink}</a> 🔧
           </div>
         </div>
       </App>
